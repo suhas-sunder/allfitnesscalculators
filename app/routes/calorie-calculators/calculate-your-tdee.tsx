@@ -632,9 +632,9 @@ export default function CalculateYourTdee() {
         </h2>
 
         <p className="text-center text-slate-600 mb-10 text-lg max-w-3xl mx-auto leading-relaxed">
-          The calculations and explanations on this page are based on
-          well-established research in exercise physiology, nutrition science,
-          and metabolic health.
+          The calculations and explanations on this page are grounded in
+          peer-reviewed research across exercise physiology, metabolic science,
+          and human nutrition.
         </p>
 
         <ul className="space-y-6 text-slate-700 text-sm sm:text-base leading-relaxed">
@@ -646,141 +646,144 @@ export default function CalculateYourTdee() {
             (1990).{" "}
             <em>
               A new predictive equation for resting energy expenditure in
-              healthy individuals. American Journal of Clinical Nutrition,
-              51(2), 241–247.{" "}
-              <a
-                href="https://doi.org/10.1093/ajcn/51.2.241"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                className="text-blue-600 hover:underline"
-              >
-                https://doi.org/10.1093/ajcn/51.2.241
-              </a>
+              healthy individuals.
             </em>{" "}
-          </li>
-
-          <li>
-            <strong>Harris, J. A., & Benedict, F. G.</strong> (1919).{" "}
-            <em>
-              A Biometric Study of Basal Metabolism in Man. Carnegie Institution
-              of Washington Publication No. 279.
-            </em>{" "}
+            <span className="italic">
+              American Journal of Clinical Nutrition, 51(2), 241–247.
+            </span>{" "}
+            <a
+              href="https://doi.org/10.1093/ajcn/51.2.241"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              className="text-blue-600 hover:underline"
+            >
+              https://doi.org/10.1093/ajcn/51.2.241
+            </a>
           </li>
 
           <li>
             <strong>Katch, F. I., & McArdle, W. D.</strong> (1996).{" "}
-            <em>
-              Nutrition, Weight Control, and Exercise. St. Louis: Mosby-Year
-              Book. (Introduced the Katch–McArdle formula for body-fat-adjusted
-              BMR)
-            </em>{" "}
+            <em>Nutrition, Weight Control, and Exercise.</em> St. Louis:
+            Mosby-Year Book.
           </li>
 
           <li>
             <strong>FAO/WHO/UNU Expert Consultation.</strong> (2004).{" "}
             <em>
               Human Energy Requirements: Report of a Joint FAO/WHO/UNU Expert
-              Consultation. Food and Nutrition Technical Report Series, No. 1.
-              Rome: Food and Agriculture Organization of the United Nations.{" "}
-              <a
-                href="https://www.fao.org/3/y5686e/y5686e.pdf"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                className="text-blue-600 hover:underline"
-              >
-                View PDF
-              </a>
+              Consultation.
             </em>{" "}
+            Food and Nutrition Technical Report Series No. 1.{" "}
+            <a
+              href="https://www.fao.org/3/y5686e/y5686e.pdf"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              className="text-blue-600 hover:underline"
+            >
+              View PDF
+            </a>
           </li>
 
           <li>
-            <strong>McArdle, W. D., Katch, F. I., & Katch, V. L.</strong>{" "}
-            (2015).{" "}
+            <strong>Institute of Medicine (U.S.).</strong> (2005).{" "}
             <em>
-              Exercise Physiology: Nutrition, Energy, and Human Performance (8th
-              ed.). Philadelphia: Lippincott Williams & Wilkins.
+              Dietary Reference Intakes for Energy, Carbohydrate, Fiber, Fat,
+              Protein, and Amino Acids.
             </em>{" "}
+            Washington, DC: National Academies Press.{" "}
+            <a
+              href="https://doi.org/10.17226/10490"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              className="text-blue-600 hover:underline"
+            >
+              https://doi.org/10.17226/10490
+            </a>
           </li>
 
           <li>
-            <strong>Cunningham, J. J.</strong> (1991).{" "}
-            <em>
-              Body composition and resting metabolic rate: the myth of feminine
-              metabolism. American Journal of Clinical Nutrition, 54(5),
-              963–967.{" "}
-              <a
-                href="https://doi.org/10.1093/ajcn/54.5.963"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                className="text-blue-600 hover:underline"
-              >
-                https://doi.org/10.1093/ajcn/54.5.963
-              </a>
-            </em>{" "}
+            <strong>Hall, K. D.</strong> (2019).{" "}
+            <em>What is the required energy deficit per unit weight loss?</em>{" "}
+            <span className="italic">
+              International Journal of Obesity, 43(5), 1019–1021.
+            </span>{" "}
+            <a
+              href="https://doi.org/10.1038/s41366-018-0265-3"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              className="text-blue-600 hover:underline"
+            >
+              https://doi.org/10.1038/s41366-018-0265-3
+            </a>
+          </li>
+
+          <li>
+            <strong>Pontzer, H., Yamada, Y., Sagayama, H., et al.</strong>{" "}
+            (2021).{" "}
+            <em>Daily energy expenditure through the human life course.</em>{" "}
+            <span className="italic">Science, 373(6556), 808–812.</span>{" "}
+            <a
+              href="https://doi.org/10.1126/science.abe5017"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              className="text-blue-600 hover:underline"
+            >
+              https://doi.org/10.1126/science.abe5017
+            </a>
+          </li>
+
+          <li>
+            <strong>Heymsfield, S. B., & Speakman, J. R.</strong> (2023).{" "}
+            <em>A new era for human energy expenditure research.</em>{" "}
+            <span className="italic">
+              American Journal of Clinical Nutrition, 117(4), 655–657.
+            </span>{" "}
+            <a
+              href="https://doi.org/10.1016/j.ajcnut.2023.01.003"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              className="text-blue-600 hover:underline"
+            >
+              https://doi.org/10.1016/j.ajcnut.2023.01.003
+            </a>
           </li>
 
           <li>
             <strong>
-              Black, A. E., Coward, W. A., Cole, T. J., & Prentice, A. M.
+              U.S. Department of Agriculture & U.S. Department of Health and
+              Human Services.
             </strong>{" "}
-            (1996).{" "}
-            <em>
-              Human energy expenditure in affluent societies: an analysis of 574
-              doubly-labelled water measurements. European Journal of Clinical
-              Nutrition, 50(2), 72–92.{" "}
-              <a
-                href="https://pubmed.ncbi.nlm.nih.gov/8641253/"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                className="text-blue-600 hover:underline"
-              >
-                PubMed Link
-              </a>
-            </em>{" "}
+            (2020). <em>Dietary Guidelines for Americans, 2020–2025.</em>{" "}
+            <a
+              href="https://www.dietaryguidelines.gov/"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              className="text-blue-600 hover:underline"
+            >
+              https://www.dietaryguidelines.gov/
+            </a>
           </li>
 
           <li>
-            <strong>Levine, J. A.</strong> (2002).{" "}
-            <em>
-              Non-exercise activity thermogenesis (NEAT). Best Practice &
-              Research Clinical Endocrinology & Metabolism, 16(4), 679–702.{" "}
-              <a
-                href="https://doi.org/10.1053/beem.2002.0227"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                className="text-blue-600 hover:underline"
-              >
-                https://doi.org/10.1053/beem.2002.0227
-              </a>
-            </em>{" "}
-          </li>
-
-          <li>
-            <strong>
-              Hall, K. D., Heymsfield, S. B., Kemnitz, J. W., Klein, S.,
-              Schoeller, D. A., & Speakman, J. R.
-            </strong>{" "}
-            (2012).{" "}
-            <em>
-              Energy balance and its components: implications for body weight
-              regulation. American Journal of Clinical Nutrition, 95(4),
-              989–994.{" "}
-              <a
-                href="https://doi.org/10.3945/ajcn.112.036350"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                className="text-blue-600 hover:underline"
-              >
-                https://doi.org/10.3945/ajcn.112.036350
-              </a>
-            </em>{" "}
+            <strong>European Food Safety Authority (EFSA).</strong> (2017).{" "}
+            <em>Scientific Opinion on Dietary Reference Values for Energy.</em>{" "}
+            <span className="italic">EFSA Journal, 11(1), 3005.</span>{" "}
+            <a
+              href="https://doi.org/10.2903/j.efsa.2013.3005"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              className="text-blue-600 hover:underline"
+            >
+              https://doi.org/10.2903/j.efsa.2013.3005
+            </a>
           </li>
         </ul>
 
         <p className="text-slate-500 text-sm mt-8 italic text-center">
-          These references are cited to ensure transparency and reliability of
-          the equations and methods used. For personalized medical or
-          nutritional advice, always consult a certified professional.
+          These references ensure transparency, accuracy, and alignment with
+          current research on metabolism and energy expenditure. For
+          personalized health or nutrition guidance, consult a licensed
+          professional.
         </p>
       </section>
 
@@ -830,6 +833,95 @@ export default function CalculateYourTdee() {
         © {new Date().getFullYear()} AllFitnessCalculators. Smarter, accurate
         tools for every fitness goal. Made with 💖.
       </footer>
+
+      {/* 🔗 Structured Data for SEO */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://allfitnesscalculators.com/",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Calorie Calculators",
+                item: "https://allfitnesscalculators.com/calorie-calculators/",
+              },
+              {
+                "@type": "ListItem",
+                position: 3,
+                name: "TDEE Calculator",
+                item: "https://allfitnesscalculators.com/calorie-calculators/calculate-your-tdee",
+              },
+            ],
+          }),
+        }}
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ScholarlyArticle",
+            headline:
+              "TDEE (Total Daily Energy Expenditure) Calculator – Science-Based Calorie Estimation",
+            description:
+              "A scientifically validated TDEE calculator that estimates your Basal Metabolic Rate (BMR), daily calorie needs, and macronutrient ratios using the Mifflin–St Jeor and Katch–McArdle equations, based on FAO, WHO, IOM, and EFSA research.",
+            author: {
+              "@type": "Organization",
+              name: "AllFitnessCalculators",
+              url: "https://allfitnesscalculators.com",
+            },
+            publisher: {
+              "@type": "Organization",
+              name: "AllFitnessCalculators",
+              logo: {
+                "@type": "ImageObject",
+                url: "https://allfitnesscalculators.com/logo.png",
+              },
+            },
+            datePublished: "2025-10-01",
+            dateModified: "2025-10-19",
+            mainEntityOfPage: {
+              "@type": "WebPage",
+              "@id":
+                "https://allfitnesscalculators.com/calorie-calculators/calculate-your-tdee",
+            },
+            keywords: [
+              "TDEE calculator",
+              "BMR calculator",
+              "daily calorie needs",
+              "Mifflin St Jeor equation",
+              "Katch McArdle formula",
+              "nutrition science",
+              "macronutrient calculator",
+              "energy expenditure",
+              "fitness tools",
+              "calorie maintenance",
+            ],
+            citation: [
+              "Mifflin MD, St Jeor ST, Hill LA, Scott BJ, Daugherty SA, Koh YO (1990). A new predictive equation for resting energy expenditure in healthy individuals. American Journal of Clinical Nutrition, 51(2), 241–247. https://doi.org/10.1093/ajcn/51.2.241",
+              "Katch FI, McArdle WD (1996). Nutrition, Weight Control, and Exercise. St. Louis: Mosby-Year Book.",
+              "FAO/WHO/UNU Expert Consultation (2004). Human Energy Requirements. Rome: Food and Agriculture Organization of the United Nations. https://www.fao.org/3/y5686e/y5686e.pdf",
+              "Institute of Medicine (2005). Dietary Reference Intakes for Energy, Carbohydrate, Fiber, Fat, Protein, and Amino Acids. Washington, DC: National Academies Press. https://doi.org/10.17226/10490",
+              "Hall KD (2019). What is the required energy deficit per unit weight loss? International Journal of Obesity, 43(5), 1019–1021. https://doi.org/10.1038/s41366-018-0265-3",
+              "Pontzer H et al. (2021). Daily energy expenditure through the human life course. Science, 373(6556), 808–812. https://doi.org/10.1126/science.abe5017",
+              "Heymsfield SB, Speakman JR (2023). A new era for human energy expenditure research. American Journal of Clinical Nutrition, 117(4), 655–657. https://doi.org/10.1016/j.ajcnut.2023.01.003",
+              "USDA & HHS (2020). Dietary Guidelines for Americans, 2020–2025. https://www.dietaryguidelines.gov/",
+              "European Food Safety Authority (2017). Scientific Opinion on Dietary Reference Values for Energy. EFSA Journal, 11(1), 3005. https://doi.org/10.2903/j.efsa.2013.3005",
+            ],
+            license: "https://creativecommons.org/licenses/by/4.0/",
+          }),
+        }}
+      />
     </main>
   );
 }

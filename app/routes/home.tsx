@@ -344,7 +344,7 @@ export default function Index() {
       <p className="text-center text-slate-600 mt-6 translate-y-[-2.5em]">
         Learn how this calculator works and view full equations on our{" "}
         <a
-          href="/tdee-calculator"
+          href="/calorie-calculators/calculate-your-tdee"
           className="text-sky-600 font-semibold hover:underline"
         >
           dedicated TDEE Calculator page →
@@ -374,7 +374,7 @@ export default function Index() {
                 {
                   title: "TDEE Calculator",
                   desc: "Estimate your Total Daily Energy Expenditure using the Mifflin–St Jeor formula.",
-                  link: "/tdee-calculator",
+                  link: "/calorie-calculators/calculate-your-tdee",
                 },
                 {
                   title: "BMR Calculator",
