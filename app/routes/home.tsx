@@ -308,7 +308,7 @@ export default function Index() {
           </nav>
         </div>
       </header>
-      <section className="text-center py-12 px-6 bg-gradient-to-b from-white to-[#f1f5f9]">
+      <section className="text-center py-12 px-6 ">
         <h1 className="text-4xl font-extrabold text-[#0f172a] mb-3">
           Your Complete Fitness & Calorie Calculator Hub
         </h1>
