@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
   <url>
     <loc>https://www.allfitnesscalculators.com</loc>
     <lastmod>2025-10-17T05:17:03.688Z</lastmod>
   </url>
+
+  <!-- Calorie Calculators Directory -->
+  <url>
+    <loc>https://www.allfitnesscalculators.com/calorie-calculators</loc>
+    <lastmod>2025-10-17T05:17:03.688Z</lastmod>
+  </url>
+
+  <!-- TDEE Calculator -->
+  <url>
+    <loc>https://www.allfitnesscalculators.com/calorie-calculators/calculate-your-tdee</loc>
+    <lastmod>2025-10-17T05:17:03.688Z</lastmod>
+  </url>
+
 </urlset>
