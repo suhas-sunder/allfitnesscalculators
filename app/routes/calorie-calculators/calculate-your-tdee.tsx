@@ -13,11 +13,30 @@ export const meta: Route.MetaFunction = () => [
   },
   { name: "robots", content: "index,follow" },
   {
-    name: "canonical",
-    content:
-      "https://www.allfitnesscalculators.com/calorie-calculators/calculate-your-tdee",
+    rel: "canonical",
+    href: "https://allfitnesscalculators.com/calorie-calculators/calculate-your-tdee",
   },
   { name: "theme-color", content: "#f8fafc" },
+  { property: "og:type", content: "article" },
+  {
+    property: "og:title",
+    content: "TDEE Calculator – Daily Calorie Burn & Maintenance Needs",
+  },
+  {
+    property: "og:description",
+    content:
+      "Find your Total Daily Energy Expenditure (TDEE) using science-backed formulas. Includes BMR, macros, and calorie goals for fat loss or muscle gain.",
+  },
+  {
+    property: "og:url",
+    content:
+      "https://allfitnesscalculators.com/calorie-calculators/calculate-your-tdee",
+  },
+  {
+    property: "og:image",
+    content: "https://allfitnesscalculators.com/social-thumbnail.jpg",
+  },
+  { name: "twitter:card", content: "summary_large_image" },
 ];
 
 export default function CalculateYourTdee() {
@@ -62,32 +81,6 @@ export default function CalculateYourTdee() {
           : 45.5 + 0.91 * (heightCm - 152.4)
         ).toFixed(1)
       : "0";
-
-  // 🔹 JSON-LD Breadcrumb schema for GSC
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Home",
-        item: "https://www.allfitnesscalculators.com/",
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: "Calorie Calculators",
-        item: "https://www.allfitnesscalculators.com/calorie-calculators/",
-      },
-      {
-        "@type": "ListItem",
-        position: 3,
-        name: "TDEE Calculator",
-        item: "https://www.allfitnesscalculators.com/calorie-calculators/calculate-your-tdee",
-      },
-    ],
-  };
 
   // 🔹 FAQ JSON-LD (TDEE Specific)
   const faqSchema = {
@@ -818,21 +811,23 @@ export default function CalculateYourTdee() {
         </div>
       </section>
 
+      <p className="text-center text-xs text-slate-500 max-w-xl mx-auto mb-6">
+        AllFitnessCalculators provides educational and informational content
+        only. These tools do not provide medical advice and are not a substitute
+        for a qualified healthcare professional.
+      </p>
+
+      <footer className="text-center text-xs text-slate-500 py-10 border-t border-slate-200">
+        © {new Date().getFullYear()} AllFitnessCalculators. Strong tools for
+        calorie tracking and fitness planning. Made with 💖.
+      </footer>
+
       {/* SEO Schema */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-
       {/* Footer */}
-      <footer className="text-center text-xs text-slate-500 py-10 border-t border-slate-200">
-        © {new Date().getFullYear()} AllFitnessCalculators. Smarter, accurate
-        tools for every fitness goal. Made with 💖.
-      </footer>
 
       {/* 🔗 Structured Data for SEO */}
       <script
@@ -846,13 +841,13 @@ export default function CalculateYourTdee() {
                 "@type": "ListItem",
                 position: 1,
                 name: "Home",
-                item: "https://allfitnesscalculators.com/",
+                item: "https://allfitnesscalculators.com",
               },
               {
                 "@type": "ListItem",
                 position: 2,
                 name: "Calorie Calculators",
-                item: "https://allfitnesscalculators.com/calorie-calculators/",
+                item: "https://allfitnesscalculators.com/calorie-calculators",
               },
               {
                 "@type": "ListItem",

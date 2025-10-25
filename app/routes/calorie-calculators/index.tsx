@@ -12,6 +12,29 @@ export const meta: Route.MetaFunction = () => [
   },
   { name: "robots", content: "index,follow" },
   { name: "theme-color", content: "#f8fafc" },
+  {
+    rel: "canonical",
+    href: "https://allfitnesscalculators.com/calorie-calculators",
+  },
+  { property: "og:type", content: "website" },
+  {
+    property: "og:title",
+    content: "Calorie Calculators – TDEE, BMR, Deficit & Macro Tools",
+  },
+  {
+    property: "og:description",
+    content:
+      "Free calorie and nutrition calculators including TDEE, BMR, macros, and more. Calculate daily calories and plan fitness goals with research-backed tools.",
+  },
+  {
+    property: "og:url",
+    content: "https://allfitnesscalculators.com/calorie-calculators",
+  },
+  {
+    property: "og:image",
+    content: "https://allfitnesscalculators.com/social-thumbnail.jpg",
+  },
+  { name: "twitter:card", content: "summary_large_image" },
 ];
 
 export default function CalorieCalculatorsIndex() {
@@ -24,7 +47,7 @@ export default function CalorieCalculatorsIndex() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://allfitnesscalculators.com/",
+        item: "https://allfitnesscalculators.com",
       },
       {
         "@type": "ListItem",
@@ -108,13 +131,16 @@ export default function CalorieCalculatorsIndex() {
             🏋️ AllFitnessCalculators
           </a>
           <nav className="space-x-6 text-sm text-slate-600">
-            <a href="/" className="text-sky-600 font-semibold">
+            <a
+              href="/calorie-calculators"
+              className="text-sky-600 font-semibold"
+            >
               Calorie Calculators
             </a>
-            <a href="/" className="hover:text-sky-600">
+            <a href="/calorie-calculators" className="hover:text-sky-600">
               BMR
             </a>
-            <a href="/" className="hover:text-sky-600">
+            <a href="/calorie-calculators" className="hover:text-sky-600">
               BMI
             </a>
           </nav>
@@ -221,7 +247,7 @@ export default function CalorieCalculatorsIndex() {
               key={i}
               className="group border border-slate-200 rounded-xl p-6 bg-[#f9fafb] hover:bg-[#f0f9ff] transition"
             >
-              <summary className="cursor-pointer text-lg font-semibold text-[#0f172a] flex justify-between items-center">
+              <summary className="cursor-pointer focus:outline-none focus:ring-2 focus:ring-sky-500 text-lg font-semibold text-[#0f172a] flex justify-between items-center">
                 {item.name}
                 <span className="text-sky-500 group-open:rotate-180 transition-transform text-2xl leading-none">
                   ⌄
@@ -235,6 +261,12 @@ export default function CalorieCalculatorsIndex() {
         </div>
       </section>
 
+      <p className="text-center text-xs text-slate-500 max-w-xl mx-auto mb-6">
+        AllFitnessCalculators provides educational and informational content
+        only. These tools do not provide medical advice and are not a substitute
+        for a qualified healthcare professional.
+      </p>
+
       {/* JSON-LD Structured Data */}
       <script
         type="application/ld+json"
@@ -244,8 +276,8 @@ export default function CalorieCalculatorsIndex() {
       />
 
       <footer className="text-center text-xs text-slate-500 py-10 border-t border-slate-200">
-        © {new Date().getFullYear()} AllFitnessCalculators. Smarter tools for
-        every goal. Made with 💖.
+        © {new Date().getFullYear()} AllFitnessCalculators. Strong tools for
+        calorie tracking and fitness planning. Made with 💖.
       </footer>
     </main>
   );

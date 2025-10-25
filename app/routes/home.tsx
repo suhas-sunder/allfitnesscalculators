@@ -3,14 +3,54 @@ import type { Route } from "./+types/home";
 import TdeeCalculatorLandingPage from "../client/layout/TdeeCalculatorLandingPage";
 
 export const meta: Route.MetaFunction = () => [
-  { title: "AllFitnessCalculators – Free Fitness, Calorie & Health Tools 🏋️" },
+  {
+    title:
+      "Free TDEE, BMR & Fitness Calculators | Calculate Calories & Health Goals",
+  },
   {
     name: "description",
     content:
-      "Explore free, science-based fitness calculators for TDEE, BMR, BMI, macros, and more. Build smarter workouts, plan meals, and track progress with accurate, research-driven tools.",
+      "Instant fitness and calorie calculators including TDEE, BMR, BMI, macros, steps and more. Calculate your calorie needs, plan workouts, and reach health goals with accurate research-backed tools.",
   },
+
   { name: "robots", content: "index,follow" },
   { name: "theme-color", content: "#f8fafc" },
+  { rel: "canonical", href: "https://allfitnesscalculators.com" },
+  // OpenGraph - social previews
+  { property: "og:type", content: "website" },
+  {
+    property: "og:title",
+    content: "AllFitnessCalculators – Free Fitness, Calorie & Health Tools 🏋️",
+  },
+  {
+    property: "og:description",
+    content:
+      "Explore free, science-based fitness calculators for TDEE, BMR, BMI, macros, and more. Plan smarter workouts and track your progress with evidence-based tools.",
+  },
+  {
+    property: "og:url",
+    content: "https://allfitnesscalculators.com",
+  },
+  {
+    property: "og:image",
+    content: "https://allfitnesscalculators.com/og-image.jpg",
+  },
+
+  // Twitter Card
+  { name: "twitter:card", content: "summary_large_image" },
+  {
+    name: "twitter:title",
+    content: "AllFitnessCalculators – Smarter Fitness Tools",
+  },
+  {
+    name: "twitter:description",
+    content:
+      "Free fitness calculators for TDEE, BMR, macros, BMI, body fat, hydration, and more.",
+  },
+  {
+    name: "twitter:image",
+    content: "https://allfitnesscalculators.com/og-image.jpg",
+  },
 ];
 
 function toKg(value: number, unit: string) {
@@ -621,14 +661,20 @@ export default function Index() {
         </div>
       </section>
 
+      <p className="text-center text-xs text-slate-500 max-w-xl mx-auto mb-6">
+        AllFitnessCalculators provides educational and informational content
+        only. These tools do not provide medical advice and are not a substitute
+        for a qualified healthcare professional.
+      </p>
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
       <footer className="text-center text-xs text-slate-500 py-10 border-t border-slate-200">
-        © {new Date().getFullYear()} AllFitnessCalculators, Smarter tools for
-        every goal. Made with 💖.
+        © {new Date().getFullYear()} AllFitnessCalculators. Strong tools for
+        calorie tracking and fitness planning. Made with 💖.
       </footer>
     </main>
   );
