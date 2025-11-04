@@ -1,2 +1,3 @@
-# codetranslators
-Code translators including morse, binary, etc.
+# AllFitnessCalculators
+
+https://www.allfitnesscalculators.com
